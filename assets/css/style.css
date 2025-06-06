@@ -44,19 +44,19 @@ body {
   }
   /* Hero Section */
 .hero {
-    background-color: #f4f4f4;
+    background-color: #1f2833;
     padding: 60px 20px;
     text-align: center;
   }
   
   .hero h1 {
-    font-size: 3em;
+    font-size: 5em;
     margin-bottom: 10px;
   }
   
   .hero p {
-    font-size: 1.5em;
-    color: #555;
+    font-size: 3em;
+    color: #66fcf1;
   }
   
   /* News Section */
