@@ -80,20 +80,20 @@ body {
   
   .news a {
     text-decoration: none;
-    color: #333;
+    color: #e6e6e6;
     font-weight: bold;
   }
   
   .news span {
     display: block;
     font-size: 0.9em;
-    color: #777;
+    color: #c7c7c7;
   }
   
   /* Featured Books Section */
   .featured-books {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #1f2833;
   }
   
   .featured-books h2 {
@@ -123,7 +123,7 @@ body {
   }
   .contact-form {
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #1f2833;
   }
   
   .contact-form h2 {
@@ -161,4 +161,41 @@ body {
   .contact-form button:hover {
     background-color: #555;
   }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    padding: 2rem 0;
+  }
   
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #1f2833;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(102, 252, 241, 0.2);
+  }
+
+  @media (max-width: 1200px) {
+    .gallery-grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .gallery-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
