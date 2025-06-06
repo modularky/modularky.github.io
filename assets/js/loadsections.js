@@ -1,27 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
     const sectionIds = ["about", "books", "projects", "updates", "contact"];
-    const sectionPromises = sectionIds.map(id => {
-      return fetch(`pages/${id}.html`)
-        .then(res => res.text())
-        .then(html => {
-          const container = document.createElement("div");
-          container.innerHTML = html;
-          document.getElementById("main").appendChild(container);
-        });
-    });
+    const main = document.getElementById("main");
   
-    // After all sections are loaded, re-enable anchor scrolling
-    Promise.all(sectionPromises).then(() => {
-      // Listen for nav link clicks
+    Promise.all(
+      sectionIds.map(id =>
+        fetch(`assets/pages/${id}.html`)
+          .then(res => res.text())
+          .then(html => {
+            const wrapper = document.createElement("div");
+            wrapper.innerHTML = html;
+            main.appendChild(wrapper);
+          })
+      )
+    ).then(() => {
+      // Enable smooth scroll after loading
       document.querySelectorAll("nav a").forEach(link => {
-        link.addEventListener("click", e => {
+        link.addEventListener("click", function (e) {
           e.preventDefault();
-          const targetId = link.getAttribute("href").substring(1); // remove the '#'
-          const targetEl = document.getElementById(targetId);
-          if (targetEl) {
-            targetEl.scrollIntoView({ behavior: "smooth" });
+          const targetId = this.getAttribute("href").substring(1);
+          const target = document.getElementById(targetId);
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth" });
           }
         });
       });
     });
   });
+  
