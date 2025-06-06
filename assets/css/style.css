@@ -42,3 +42,83 @@ body {
   html {
     scroll-behavior: smooth;
   }
+  /* Hero Section */
+.hero {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 1.5em;
+    color: #555;
+  }
+  
+  /* News Section */
+  .news {
+    padding: 40px 20px;
+  }
+  
+  .news h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .news ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .news li {
+    margin-bottom: 10px;
+  }
+  
+  .news a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .news span {
+    display: block;
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  /* Featured Books Section */
+  .featured-books {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .featured-books h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .book-item {
+    flex: 1 1 200px;
+    text-align: center;
+  }
+  
+  .book-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .book-item p {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
