@@ -200,3 +200,8 @@ body {
       grid-template-columns: repeat(2, 1fr);
     }
   }
+  
+  .book-description {
+    flex: 1;
+    color: #c5c6c7;
+  }
