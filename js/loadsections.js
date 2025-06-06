@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     // Default page
-    loadPage("about");
+    loadPage("home");
   
     navLinks.forEach((link) => {
       link.addEventListener("click", (e) => {
