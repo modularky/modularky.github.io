@@ -1,40 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const main = document.getElementById("main");
-
-  // Grab ALL elements with data-page, not just nav links
-  const pageLinks = document.querySelectorAll("[data-page]");
-
-  function loadPage(page) {
-    fetch(`assets/pages/${page}.html`)
-      .then((res) => {
-        if (!res.ok) throw new Error("Page not found");
-        return res.text();
-      })
-      .then((html) => {
-        main.innerHTML = html;
-      })
-      .catch((err) => {
-        main.innerHTML = "<p>Sorry, that page could not be loaded.</p>";
-        console.error(err);
-      });
-  }
-
-  // Default page
-  loadPage("home");
-
-  // Bind to all data-page elements (links, images, etc.)
-  pageLinks.forEach((el) => {
-    el.addEventListener("click", (e) => {
-      e.preventDefault();
-      const page = el.getAttribute("data-page");
-      if (page) loadPage(page);
-    });
-  });
-});
-
-
-/*
-document.addEventListener("DOMContentLoaded", () => {
     const main = document.getElementById("main");
     const navLinks = document.querySelectorAll("nav a[data-page]");
   

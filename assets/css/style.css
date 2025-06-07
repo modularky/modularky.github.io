@@ -186,6 +186,7 @@ body {
   
 .hero-left {
   flex: 1;
+  vertical-align: left;
 }
 
 .hero-right {
@@ -212,7 +213,7 @@ body {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  
+
   .book-item {
     display: flex;
     align-items: center; /* vertically center the text next to the image */
