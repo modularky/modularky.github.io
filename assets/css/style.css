@@ -213,6 +213,12 @@ body {
     }
   }
   
+  .book-item {
+    display: flex;
+    align-items: center; /* vertically center the text next to the image */
+    gap: 1rem; /* space between image and text */
+  }
+
   .book-description {
     flex: 1;
     color: #c5c6c7;
