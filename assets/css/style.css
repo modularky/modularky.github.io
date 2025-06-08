@@ -186,7 +186,8 @@ body {
   
 .hero-left {
   flex: 1;
-  vertical-align: left;
+  max-width: 50%;
+  height: auto;
 }
 
 .hero-right {
