@@ -440,12 +440,14 @@ textarea {
   border-bottom: 2px solid #45a29e;
 }
 
-/*BOOKS SECTION*/
+/* BOOKS SECTION */
 
 #books {
-  padding: 2rem 1rem;
+  padding: 3rem 2rem;
   background-color: #0b0c10;
   color: #c5c6c7;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 #books h2 {
@@ -453,7 +455,8 @@ textarea {
   font-size: 2rem;
   border-left: 5px solid #d0f820;
   padding-left: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: left;
 }
 
 .book-grid {
@@ -466,15 +469,17 @@ textarea {
   display: flex;
   flex-direction: row;
   background-color: #1f2833;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(102, 252, 241, 0.1);
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
+  align-items: flex-start;
+  border-left: 4px solid #45a29e;
 }
 
 .book-card img {
-  width: 200px; /* or adjust size as needed */
+  width: 220px;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
@@ -490,13 +495,19 @@ textarea {
 
 .book-info h3 {
   color: #d0f820;
-  margin: 0;
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.book-info p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
 }
 
 .book-info ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 1rem 0 0 0;
 }
 
 .book-info li {
@@ -513,13 +524,17 @@ textarea {
 }
 
 .upcoming-books {
-  margin-top: 2rem;
-  text-align: center;
-  font-style: italic;
-  color: #aaa;
+  margin-top: 3rem;
+  border-top: 1px solid #2c3e50;
+  padding-top: 2rem;
+  color: #bbb;
 }
 
 @media (max-width: 768px) {
+  #books {
+    padding: 2rem 1rem;
+  }
+
   .book-card {
     flex-direction: column;
     align-items: center;
@@ -533,5 +548,9 @@ textarea {
   .book-card img {
     width: 70%;
     max-width: 300px;
+  }
+
+  .book-info h3 {
+    font-size: 1.3rem;
   }
 }
