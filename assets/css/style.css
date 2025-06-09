@@ -48,7 +48,16 @@ body {
     padding: 20px 20px;
     text-align: center;
   }
-  
+.fname {
+  font-size: 9em;
+  background-color: #6a798b;
+  color: #66fcf1;
+}
+.lname {
+  font-size: 15em;
+  background-color: #6a798b;
+  color: #d0f820;
+}
   .hero h1 {
     font-size: 5em;
     margin-bottom: 10px;
