@@ -449,8 +449,10 @@ textarea {
 }
 
 #books h2 {
-  text-align: left;
   color: #66fcf1;
+  font-size: 2rem;
+  border-left: 5px solid #d0f820;
+  padding-left: 1rem;
   margin-bottom: 2rem;
 }
 
