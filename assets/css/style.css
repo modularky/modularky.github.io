@@ -217,6 +217,13 @@ section h2 {
   transition: transform 0.3s ease;
   text-align: center;
 }
+.book-item img {
+  width: 200px; /* or adjust size as needed */
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
 
 .book-item:hover {
   transform: translateY(-5px);
