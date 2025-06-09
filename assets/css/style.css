@@ -44,9 +44,21 @@ body {
   }
   /* Hero Section */
 .hero {
-    background-color: #1f2833;
-    padding: 20px 20px;
-    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1f2833;
+  padding: 0px 40px;
+  height: 100vh;
+  box-sizing: border-box;
+  }
+
+  .hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
   }
 
   .name-block {
@@ -54,21 +66,28 @@ body {
     flex-direction: column;
     align-items: flex-start; /* Align Modular to left */
     line-height: 1;
-    position: relative;
   }
   
   .fname {
     font-size: 9em;
     color: #66fcf1;
-    margin: 0;
+    margin: -0.3em 0 0 0;
+    align-self: flex-end; /* aligns Ky to the right of Modular */
   }
   
   .lname {
-    font-size: 15em;
+    font-size: 6em;
     color: #d0f820;
     margin: 0;
 
     margin-top: -0.2em; /* Optional: Pull it up to make them closer */
+  }
+
+  .hero-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .hero h1 {
@@ -235,11 +254,42 @@ body {
     .gallery-grid {
       grid-template-columns: repeat(3, 1fr);
     }
+    .fname {
+      font-size: 4em;
+    }
+  
+    .lname {
+      font-size: 6em;
+      margin-top: -0.2em;
+    }
+  
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+  
+    .hero-left, .hero-right {
+      flex: unset;
+      width: 100%;
+    }
+  
+    .lname {
+      align-self: center; /* Optional: center on small screens */
+    }
   }
   
   @media (max-width: 480px) {
     .gallery-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .fname {
+      font-size: 3em;
+    }
+  
+    .lname {
+      font-size: 4.5em;
     }
   }
 

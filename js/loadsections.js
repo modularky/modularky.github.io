@@ -28,21 +28,3 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll(".clickable-book").forEach((img) => {
-      img.addEventListener("click", function () {
-        const targetPage = this.getAttribute("data-page");
-        // Replace this with your own logic to switch pages
-        navigateToPage(targetPage);
-      });
-    });
-  
-    function navigateToPage(pageName) {
-      // Example logic: load different content or redirect
-      console.log("Navigating to:", pageName);
-      // Example: you might call some router or change content
-      // window.location.href = `${pageName}.html`; // if using actual files
-      // OR dynamically load content if you're using a single page setup
-    }
-  });
