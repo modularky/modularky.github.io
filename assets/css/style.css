@@ -57,7 +57,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0;
 }
 
 /* HERO IMAGE STYLING */
@@ -431,4 +431,97 @@ textarea {
   max-width: 1200px;
   margin: 0 auto;
   border-bottom: 2px solid #45a29e;
+}
+
+/*BOOKS SECTION*/
+
+#books {
+  padding: 2rem 1rem;
+  background-color: #0b0c10;
+  color: #c5c6c7;
+}
+
+#books h2 {
+  text-align: center;
+  color: #66fcf1;
+  margin-bottom: 2rem;
+}
+
+.book-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: row;
+  background-color: #1f2833;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(102, 252, 241, 0.1);
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.book-card img {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.book-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.book-info h3 {
+  color: #d0f820;
+  margin: 0;
+}
+
+.book-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-info li {
+  margin: 0.3em 0;
+}
+
+.book-info a {
+  color: #66fcf1;
+  text-decoration: none;
+}
+
+.book-info a:hover {
+  text-decoration: underline;
+}
+
+.upcoming-books {
+  margin-top: 2rem;
+  text-align: center;
+  font-style: italic;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .book-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .book-info {
+    align-items: center;
+  }
+
+  .book-card img {
+    width: 70%;
+    max-width: 300px;
+  }
 }
