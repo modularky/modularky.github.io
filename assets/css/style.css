@@ -212,7 +212,7 @@ section h2 {
 }
 
 .book-item img {
-  width: 100%;
+  width: 50%;
   height: auto;
   max-height: 260px;
   object-fit: cover;
@@ -343,4 +343,47 @@ section h2 {
   background-color: #0b0c10;
   border-top: 1px solid #45a29e;
   text-align: center;
+}
+
+/* CONTACT SECTION*/
+.contact-form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn-submit {
+  background-color: #1da1f2;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #0d8ddb;
 }
