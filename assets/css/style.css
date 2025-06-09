@@ -410,3 +410,10 @@ textarea {
 .btn-submit:hover {
   background-color: #0d8ddb;
 }
+
+#about {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 2px solid #45a29e;
+}
