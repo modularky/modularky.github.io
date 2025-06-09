@@ -48,18 +48,31 @@ body {
     padding: 20px 20px;
     text-align: center;
   }
-.fname {
-  font-size: 9em;
-  background-color: #6a798b;
-  color: #66fcf1;
-}
-.lname {
-  font-size: 15em;
-  background-color: #6a798b;
-  color: #d0f820;
-}
+
+  .name-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align Modular to left */
+    line-height: 1;
+    position: relative;
+  }
+  
+  .fname {
+    font-size: 9em;
+    color: #66fcf1;
+    margin: 0;
+  }
+  
+  .lname {
+    font-size: 15em;
+    color: #d0f820;
+    margin: 0;
+
+    margin-top: -0.2em; /* Optional: Pull it up to make them closer */
+  }
+  
   .hero h1 {
-    font-size: 5em;
+    font-size: unset;
     margin-bottom: 10px;
   }
   
@@ -67,6 +80,12 @@ body {
     font-size: 1.5em;
     background-color: #6a798b;
     color: #66fcf1;
+  }
+  .hero-tagline {
+
+    color: #66fcf1;
+    font-size: 1.5em;
+    text-align: center;
   }
   
   /* News Section */
