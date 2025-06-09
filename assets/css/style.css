@@ -472,10 +472,11 @@ textarea {
 }
 
 .book-card img {
-  width: 220px;
+  width: 200px; /* or adjust size as needed */
   height: auto;
-  border-radius: 8px;
   object-fit: contain;
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
 .book-info {
