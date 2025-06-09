@@ -50,9 +50,23 @@ header {
   text-shadow: 0 0 8px #c5c6c7;
 }
 
+/* HERO RIGHT CONTAINER */
 .hero-right {
-  width: 40%;
-  text-align: right;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* HERO IMAGE STYLING */
+.hero-right img {
+  max-width: 250px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 0 12px rgba(102, 252, 241, 0.3);
 }
 
 /* ==== TAGLINE ==== */
