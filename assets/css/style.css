@@ -34,6 +34,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   line-height: 1;
+  padding-left: 10vw; /* <-- Adjust this value as needed */
 }
 
 .fname {
