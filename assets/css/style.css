@@ -147,10 +147,7 @@ section.featured-books {
   box-sizing: border-box;
 }
 
-section.news {
-  border-top: 2px solid #45a29e;
-  margin-top: 2rem;
-}
+
 
 /* ==== HEADINGS ==== */
 section h2 {
