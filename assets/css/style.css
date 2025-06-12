@@ -550,3 +550,19 @@ textarea {
     font-size: 1.3rem;
   }
 }
+
+/*Updates Section*/
+#updates {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 2px solid #45a29e;
+}
+
+#updates h2 {
+  color: #66fcf1;
+  font-size: 2rem;
+  border-left: 5px solid #d0f820;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
