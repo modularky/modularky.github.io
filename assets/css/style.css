@@ -566,3 +566,29 @@ textarea {
   padding-left: 1rem;
   margin-bottom: 2rem;
 }
+#updates ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#updates li {
+  margin-bottom: 1rem;
+}
+
+#updates a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#updates a:hover {
+  color: #d0f820;
+}
+
+#updates span {
+  display: block;
+  font-size: 0.85em;
+  color: #999;
+  margin-top: 0.2em;
+}
